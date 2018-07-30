@@ -2,7 +2,7 @@
 
 apt update
 
-apt-get install python3-pip
+apt-get --assume-yes install python3-pip
 
 pip install shadowsocks
 
