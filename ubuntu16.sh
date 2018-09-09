@@ -9,7 +9,7 @@ pip install shadowsocks
 IP=$( ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1' )
 PWD=$(date +%y%m%d)
 
-echo Your PWD is: $(PWD)
+echo Your PWD is: ${PWD}
 
 cat > /etc/shadowsocks.json <<EOF 
 {
